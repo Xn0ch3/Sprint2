@@ -1,0 +1,276 @@
+/* Normalizador */
+* {
+
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+:root {
+    --color-primario: black;
+    --color-secundario: magenta;
+    --color-terciario: white;
+}
+
+/* Header y Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    background-color: var(--color-secundario);
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 4%;
+    text-align: right;
+}
+.logo :hover{
+    transform: scale(1.2);
+    color: var(--color-terciario);
+    transition: all 0.3;
+}
+
+nav {
+    width: 92%;
+}
+
+a {
+    color: var(--color-primario);
+    background-color: var(--color-secundario);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+nav a:hover {
+    transform: scale(1.2);
+    color: var(--color-terciario);
+    transition: all 0.3;
+}
+
+nav a {
+    margin: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color-primario);
+}
+
+/* Pagina Index */
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 100vh;
+    background-image:url(./assets/images-Sprint1/imagebanner.jpg) ;
+    background-color: rgb(5, 5, 5);
+    background-blend-mode: soft-light;
+}
+
+
+#banner {
+    width: 100%;
+    height: 35vh;
+    object-fit: cover;
+
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    display: block;
+    text-align: center;
+    color: var(--color-secundario);
+    text-shadow: var(--color-secundario);
+}
+
+.textoEimagen {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    object-fit: contain;
+}
+
+.textoEimagen>img {
+    width: 12rem;
+    border-radius: 2rem;
+}
+
+.textoEimagen>p {
+    width: 15rem;
+    text-shadow: var(--color-secundario);
+}
+
+/* pagina About */
+
+.aboutUsTexImg {
+    display: flex;
+    gap: 10vh;
+    flex-direction: column;
+    align-items: center;
+    object-fit: cover;
+}
+
+.imagentexto2,
+.imagentexto3,
+.imagentexto4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    width: 50%;
+}
+
+.imagentexto2>img,
+.imagentexto3>img,
+.imagentexto4>img {
+    width: 15rem;
+    border-radius: 2rem;
+}
+
+.imagetexto2>p,
+.imagetexto3>p,
+.imagetexto4>p {
+    width: 15rem;
+    text-shadow: var(--color-secundario);
+}
+
+
+
+/* Pagina de Contact */
+.ContactImgTexto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ContactImgTexto img {
+    width: 50rem;
+    border-radius: 3rem;
+
+}
+
+.ContactImgTexto p {
+    text-align: center;
+    text-shadow: var(--color-secundario);
+
+}
+
+.EmailsTel {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.EmailsTel a {
+    text-align: center;
+    margin-left: 150px;
+    background-color: var(--color-secundario);
+    border: 1px;
+    padding: 1rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    width: 20%;
+
+}
+
+
+/*Pagina  Service */
+
+.Tservice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+table,
+tr,
+th,
+td {
+    border: 2px solid var(--color-secundario);
+    border-collapse: collapse;
+}
+
+table {
+    text-align: center;
+}
+
+table :hover {
+    transform: scale(1);
+    color: var(--color-terciario);
+    transition: all 0.3;
+}
+
+tr,
+th,
+td {
+    width: 8rem;
+    height: 5rem;
+}
+
+/* Pagina Rating */
+
+.Rating {
+    display: flex;
+    justify-content: center;
+
+}
+
+.lista1,
+.lista2 {
+    width: 40rem;
+    height: 13rem;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 5rem;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.ulImg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lista1 img,
+.lista2 img {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+}
+
+
+ul {
+    margin-left: 2rem;
+}
+
+p{
+    text-align: center;
+
+}
+
+/* Footer General */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    width: 100%;
+    height: 50px;
+}
+
+footer p {
+    line-height: 48px;
+    text-align: center;
+}
